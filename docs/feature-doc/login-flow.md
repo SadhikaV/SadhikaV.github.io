@@ -24,11 +24,12 @@ The Login screen includes:
 - Loading spinner during authentication
 
 ```json```
-  {
-    "email": "user@example.com",
-    "password": "*******"
-  }
- ## 5. Workflow
+{
+  "email": "user@example.com",
+  "password": "*******"
+}
+
+ ### 5. Workflow
  1. User enters email and password.
  2. User clicks the "Sign In" button.
  3. Frontend validation checks email format and empty fields.
@@ -38,12 +39,24 @@ The Login screen includes:
  7. If authentication succeeds, token is returned and user is redirected to the dashboard.
  8. If authentication fails, an error message is displayed.
 
-  ## 6. Validation Rules
+```json```
+{
+  "email": "user@example.com",
+  "password": "*******"
+}
+
+  ### 6. Validation Rules
   - Email is required and must be a valid format.
   - Password is required.
   - Backend validates credentials and returns an error if invalid.
 
-   ## 7. API Interaction
+```json```
+{
+  "email": "user@example.com",
+  "password": "*******"
+}
+
+  ### 7. API Interaction
 
    ### Endpoint
    `POST /api/auth/login`
@@ -77,6 +90,13 @@ The Login screen includes:
   - **Incorrect email or password** - returned by backend authentication.
   - **Network error** - shown if API server fails or timeout.
 
+```json```
+{
+  "email": "user@example.com",
+  "password": "*******"
+}
+
+
   ### 9. Navigation 
   
   After a succesful login:
@@ -88,6 +108,13 @@ The Login screen includes:
   - All protected routes are accessible only when a valid token exists.
     
     Navigation is handled using React Router's `useNavigate()` hook.
+
+```json```
+{
+  "email": "user@example.com",
+  "password": "*******"
+}
+
     
   ### 10. Diagram
 
