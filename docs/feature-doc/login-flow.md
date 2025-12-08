@@ -22,11 +22,13 @@ The Login screen includes:
 - "Forgot Password?" link
 - Inline validation messages
 - Loading spinner during authentication
+```json  
 {
   "email": "user@example.com",
   "password": "*******"
 }
- ### 5. Workflow
+```
+ ## 5. Workflow
  1. User enters email and password.
  2. User clicks the "Sign In" button.
  3. Frontend validation checks email format and empty fields.
@@ -35,19 +37,23 @@ The Login screen includes:
  6. Backend validates credentials.
  7. If authentication succeeds, token is returned and user is redirected to the dashboard.
  8. If authentication fails, an error message is displayed.
+```json
 {
   "email": "user@example.com",
   "password": "*******"
 }
-  ### 6. Validation Rules
+```
+  ## 6. Validation Rules
   - Email is required and must be a valid format.
   - Password is required.
   - Backend validates credentials and returns an error if invalid.
+```json
 {
   "email": "user@example.com",
   "password": "*******"
 }
-  ### 7. API Interaction
+```
+  ## 7. API Interaction
 
    ### Endpoint
    `POST /api/auth/login`
@@ -72,7 +78,7 @@ The Login screen includes:
     "error": "Invalid email or password"
   }
 
-  ### 8. Error Handling
+  ## 8. Error Handling
 
   The Login Flow includes both frontend and backend error handling:
   - **Email is required** - shown if the email field is empty.
@@ -81,12 +87,13 @@ The Login screen includes:
   - **Incorrect email or password** - returned by backend authentication.
   - **Network error** - shown if API server fails or timeout.
 
-```json```
+```json
 {
   "email": "user@example.com",
   "password": "*******"
 }
-  ### 9. Navigation 
+```
+  ## 9. Navigation 
   
   After a succesful login:
 
@@ -97,13 +104,13 @@ The Login screen includes:
   - All protected routes are accessible only when a valid token exists.
     
     Navigation is handled using React Router's `useNavigate()` hook.
-json    
+```json    
 {
   "email": "user@example.com",
   "password": "*******"
 }
-   
-  ### 10. Diagram
+ ```  
+  ## 10. Diagram
 
   A visual workflow of the Login process will be added here.
 
