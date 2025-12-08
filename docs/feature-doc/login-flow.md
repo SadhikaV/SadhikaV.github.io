@@ -44,21 +44,18 @@ The Login screen includes:
    `POST /api/auth/login`
 
    ### Request Body
-  ```json```
   {
     "email": "user@example.com",
     "password": "*******"
   }
   
   ### Success Response
-  ```json```
   {
     "token": "<jwt-token>",
     "userID": "12345"
   }
   
   ### Error Response
-  ```json```
   {
     "error": "Invalid email or password"
   }
