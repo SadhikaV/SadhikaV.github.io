@@ -24,7 +24,10 @@ The Login screen includes:
 - Loading spinner during authentication
 
 ```json```
-{
+  {
+    "email": "user@example.com",
+    "password": "*******"
+  }
  ## 5. Workflow
  1. User enters email and password.
  2. User clicks the "Sign In" button.
@@ -34,7 +37,7 @@ The Login screen includes:
  6. Backend validates credentials.
  7. If authentication succeeds, token is returned and user is redirected to the dashboard.
  8. If authentication fails, an error message is displayed.
-}
+
   ## 6. Validation Rules
   - Email is required and must be a valid format.
   - Password is required.
