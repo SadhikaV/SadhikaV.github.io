@@ -40,29 +40,29 @@ The Login screen includes:
 
 ## 7. API Interaction
 
-### **Endpoint**
-`POST /api/auth/login`
-
-### **Request Body**
-```json
-{
-  "email": "user@example.com",
-  "password": "*******"
-}
- ```
-  ## **Success Response**
+  ### **Endpoint**
+  `POST /api/auth/login`
+  
+  ### **Request Body**
   ```json
-{
+  {
+    "email": "user@example.com",
+    "password": "*******"
+  }
+   ```
+  ### **Success Response**
+  ```json
+  {
   "token": "<jwt-token>",
   "userID": "12345"
 }
-```  
-  ## **Error Response**
-  ```json
-  {
-    "error": "Invalid email or password"
-  }
 ```
+  ### **Error Response**
+ ```json
+  {
+   "error": "Invalid email or password"
+ }
+ ```
 ## 8. Error Handling
 
   The Login Flow includes both frontend and backend error handling:
