@@ -58,11 +58,11 @@ The Login screen includes:
 }
 ```  
   ## Error Response
-  ```json```
+  ```json
   {
     "error": "Invalid email or password"
   }
-
+```
 ## 8. Error Handling
 
   The Login Flow includes both frontend and backend error handling:
