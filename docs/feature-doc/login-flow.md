@@ -50,14 +50,14 @@ The Login screen includes:
   "password": "*******"
 }
  ```
-  ## Success Response
+  ## **Success Response**
   ```json
 {
   "token": "<jwt-token>",
   "userID": "12345"
 }
 ```  
-  ## Error Response
+  ## **Error Response**
   ```json
   {
     "error": "Invalid email or password"
