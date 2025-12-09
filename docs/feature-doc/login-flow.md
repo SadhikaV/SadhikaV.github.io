@@ -40,24 +40,24 @@ The Login screen includes:
 
 ## 7. API Interaction
 
-  ### **Endpoint**
-  `POST /api/auth/login`
+   **Endpoint**
+   `POST /api/auth/login`
   
-  ### **Request Body**
-  ```json
-  {
-    "email": "user@example.com",
-    "password": "*******"
-  }
+   **Request Body**
+   ```json
+   {
+     "email": "user@example.com",
+     "password": "*******"
+   }
    ```
-  ### **Success Response**
+   **Success Response**
   ```json
   {
   "token": "<jwt-token>",
   "userID": "12345"
 }
 ```
-  ### **Error Response**
+   **Error Response**
  ```json
   {
    "error": "Invalid email or password"
